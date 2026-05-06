@@ -2,9 +2,9 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: stardew-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  # Anotasi rewrite-target DIHAPUS agar routing tidak kacau
 spec:
+  ingressClassName: nginx # Wajib ditambahkan untuk AKS
   rules:
   - http:
       paths:
