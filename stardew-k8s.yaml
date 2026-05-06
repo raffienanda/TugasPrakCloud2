@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend-api
-        image: <USERNAME_DOCKER_KAMU>/stardew-backend:latest
+        image: raffienanda/stardew-backend:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
       - name: frontend-ui
-        image: <USERNAME_DOCKER_KAMU>/stardew-frontend:latest
+        image: raffienanda/stardew-frontend:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
